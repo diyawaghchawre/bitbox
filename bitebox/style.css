@@ -6,28 +6,41 @@
 }
 nav{
     
-    padding: 10px;
-    background-color: black;
+    padding: 0 50px;
+    background-color: rgb(238, 125, 73);
     color:white;
     align-items : center;
-    /* height: 60px; */
+    height: 80px;
 }
+
+.logo{
+
+    width: 140px;
+    height: auto;
+
+}
+
+
 nav div{
       
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    height: 80px;
 }
 ul{
     display: flex;
     list-style: none;
     text-align:center;
+    gap:20px
+
 }
 li a{
     color: white;
-    padding: 20px;
+    padding: 8px 10px;
     text-decoration: none;
     font-weight: 700;
+    /* height: 80px; */
 }
 nav a:hover{
     color: red;
@@ -47,4 +60,172 @@ nav a.active{
     color: red;
     font-weight: bold;
     border-bottom: 2px solid red;
+}
+
+.hero{
+    height:100vh;
+    color:yellow;
+    background-image: url("/bitebox/images/foodimg.jpeg");
+    display: flex;
+    justify-content: center; /*for horizontal*/
+    align-items: center;     /*for vertical*/
+    text-align: center;
+
+}
+.hero p{
+    color:darkorange;
+    font-weight:bolder;
+}
+
+.hero button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bolder;
+
+}
+
+.hero button:hover{
+    background: darkred;
+
+}
+
+.video-section{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:50px;
+    gap:40px;
+
+}
+.video-text{
+    flex:1;
+    }
+
+.video-box{
+    flex:1;
+}
+
+.video-box video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-text h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+    }
+.video-text p{
+    font-size:18px;
+    color:darkslategrey;
+}
+
+/* about section */
+
+.about{
+    text-align:center;
+    padding:60px 20px;
+    background:#f9f9f9;
+
+}
+
+.about h2{
+      font-size: 32px;
+      margin: 20px;
+      color:rgb(255, 0 ,0 ,0.615)
+}
+.about p{
+    max-width:700px;
+    margin: auto;
+    font-size:18px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* Menu Card*/
+
+.card{
+    
+    background: #fff;
+    padding : 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px(0,0,0,0.1);
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card button{
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.card button:hover{
+    background: darkred;
+}
+
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:20px;
+
+}
+
+.category-icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+    background:#fff;
+    justify-content:center;
+
+}
+
+.icons-box{
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition:0.3s;
+}
+
+.icons-box img{
+    width: 70px;
+    height:70px;
+    object-fit: cover;
+    border-radius:50px;
+    border: 2px solid #eee;
+    padding: 5px;
+    box-shadow: 0 4px 10px black;
+    /* margin-bottom: 15px; */
+}
+.icons-box p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.icons-box img:hover{
+    border-color:rgb(0,0,0);
+    transform:scale(1.1);
+}
+
+.icons-box p:hover{
+    color: red;
+}
+
+header{
+    position: sticky;  
+    top:0;
+    z-index: 1000;
 }
