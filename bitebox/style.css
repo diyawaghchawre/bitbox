@@ -154,7 +154,7 @@ nav a.active{
     padding : 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 10px(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(90, 0, 0, 0.4);
 }
 
 .card img{
@@ -228,4 +228,159 @@ header{
     position: sticky;  
     top:0;
     z-index: 1000;
+}
+
+/* Cart Section */
+
+table{
+    width:70%;
+    border-collapse: collapse;
+    background:#fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}
+
+thead{
+    background: red;
+    color: white;
+}
+
+th , td{
+    padding:15px;
+    text-align: center;
+}
+
+tbody tr{
+    border-bottom: 1px solid #ddd;
+
+}
+
+.Item{
+    display:flex;
+    align-items:center;
+    gap: 15px;
+}
+
+.Item img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.remove{
+    background: red;
+    color: white;
+    border: none;
+    padding:5px 10px;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+.remove:hover{
+    background: darkred;
+}
+
+.grand-total td{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.grand-total button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background:red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grand-total button:hover {
+    background:yellow;
+    color: black;
+}
+
+.qty-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.qty-box button{
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: red;
+    color: white;
+    font-size:16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qty-box button:hover{
+    background: rgb(248, 62, 62);
+    color: black;
+}
+
+.qty-box span{
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+/* =========Auth css======== */
+.auth-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#f1bd2d,#e76565);
+}
+
+.auth-box{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    width:320px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgb(0,0,0,0.3);
+}
+
+.auth-box h2{
+    margin-bottom: 20px;
+    color: #000;
+}
+.auth-box input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius:5pc;
+    outline: none;
+}
+.auth-box input:focus{
+    border-color: rgb(8, 8, 8);
+}
+.auth-box button{
+    width: 100%;
+    padding: 10px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    cursor: pointer;
+}
+.auth-box button:hover{
+    background-color:darkolivegreen;
+}
+.auth-box a{
+    color: rgb(5, 65, 88);
+    text-decoration: none;
 }

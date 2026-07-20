@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Signup</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/6d7d8e1292.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/bitebox/images/favicon.ico" type="image/x-icon">
@@ -13,13 +13,12 @@
 </head>
 <body>
     <!-- start header section -->
-
-     <hearder>
+    <hearder>
       <nav>
         <div>
           <!-- Logo -->
           <!-- <h2>Bite<span style="color: red;">Box</span></h2> -->
-          <img src="images/biteboxlogo1.png" alt="logo" class="logo">
+          <img src="images/biteboxlogo1.png" alt="logo" class="logo" />
 
           <!-- Menu  -->
           <ul>
@@ -40,24 +39,27 @@
         </div>
       </nav>
     </hearder>
-
     <!-- end header section -->
-    
-    <!-- start Authentication section -->
+
+    <!-- start authetication section -->
      <section class="auth-container">
         <div class="auth-box">
-            <h2>Login to Bite <span>Box</span></h2>
+            <h2>Create Account</h2>
+
             <form>
-                <input type="email" placeholder="Enter Email" required>
-                <input type="password" placeholder="Enter Password" required>
+                <input type="text" placeholder="Full Name" required></input>
+                <input type="email" placeholder="Email" required></input>
+                <input type="password" placeholder="Password" required></input>
+                <input type="password" placeholder="Confirm Password" required></input>
 
-                <button type="submit">Login</button>
+                <button type="submit">Signup</button>
             </form>
-            <p><a href="signup.html">Forgot Password</a></p>
-            <p>Don't have an account<a href="signup.html">Signup</a></p>
-
+            <p>Already have an account <a href="login.html">Login</a></p>
         </div>
-
      </section>
+
+
+    <!-- end authetication section -->
+    
 </body>
 </html>

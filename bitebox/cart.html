@@ -4,12 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d7d8e1292.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/bitebox/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Yuyu&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <h1>Cart</h1>
        
-       <div id="container">
-        <img src="bitebox/img1.jfif" alt="Product Image">
-       </div>
+       <header>
+      <nav>
+        <div>
+          <!-- Logo -->
+           <!-- <h2>Bite<span style="color:blue">Box</span></h2> -->
+           <img src="images/biteboxlogo1.png" alt="logo" class="logo">
+          <!-- Menu -->
+           <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="bite-deal.html">Bite Deal</a></li>
+            <li><a href="cart.html">Cart<i class="fa-solid fa-cart-arrow-down"></i></a></li>
+            <li><a href="login.html">Login<i class="fa-solid fa-arrow-right-from-bracket"></i></a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section completed -->
+
+    <!-- Start Cart Section -->
+
+    <section class="Cart"><br> <br>
+      <table>
+        <thead>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Qty</th>
+          <th>Total</th>
+          <th>Remove</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="Item"> 
+              <img src="images/burger2.jpg" alt="" height="180px" width="200px">
+              <div>
+                <h4>Cheesy Burger</h4>
+                <p>Juicy Grilled Burger</p>
+              </div>
+            </td>
+            <td>Rs.199</td>
+            <td>
+              <div class="qty-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            </td>
+            <td>Rs.199</td>
+            <td>
+              <Button class="remove">X</Button>
+            </td> 
+          </tr>
+
+            
+            <td class="Item"> 
+              <img src="images/sushi2.jpg" alt="" height="180px" width="200px">
+              <div>
+                <h4>Sushi</h4>
+                <p>platters of sushi</p>
+              </div>
+            </td>
+            <td>Rs.499</td>
+            <td>
+              <div class="qty-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </div>
+            </td>
+            <td>Rs.499</td>
+            <td>
+              <Button class="remove">X</Button>
+            </td> 
+          </tr>
+          <tr class="grand-total">
+              <td colspan="3">Grand Total</td>
+              <td>Rs.698</td>
+              <td><Button>Proceed</Button></td>
+            </tr>
+
+            <tr>
+
+
+          
+        </tbody>
+      </table>
+    </section>
     </body>
 </html>
